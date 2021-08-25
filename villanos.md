@@ -2,4 +2,3 @@
 
 * X
 * Y
-* Capitán America
