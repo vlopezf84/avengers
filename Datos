@@ -44,27 +44,21 @@ do {
 
                 foreach ($file in $changes.changes) {
 
-                    $path = $file.new_path
-                    $pathLower = $path.ToLower()
+    $path = $file.new_path
+    $partes = $path.Split("/")
 
-                    # =========================
-                    # FILTRO POR ESTRUCTURA REAL
-                    # middleware/MW-Services/BackEnd/<app>
-                    # =========================
-                    if ($pathLower.StartsWith("middleware/mw-services/backend/")) {
+    # Buscar dinámicamente donde está "BackEnd"
+    $index = $partes.IndexOf("BackEnd")
 
-                        $partes = $path.Split("/")
+    if ($index -ge 0 -and $partes.Count -gt ($index + 1)) {
 
-                        if ($partes.Count -ge 4) {
+        $app = "$($partes[$index -2])/$($partes[$index -1])/$($partes[$index])/$($partes[$index +1])"
 
-                            $app = "$($partes[0])/$($partes[1])/$($partes[2])/$($partes[3])"
-
-                            if (-not $aplicativos.Contains($app)) {
-                                $aplicativos += $app
-                            }
-                        }
-                    }
-                }
+        if (-not $aplicativos.Contains($app)) {
+            $aplicativos += $app
+        }
+    }
+}
 
                 # Limpiar duplicados
                 $aplicativos = $aplicativos | Sort-Object -Unique
