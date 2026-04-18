@@ -34,36 +34,58 @@ do {
 
             foreach ($mr in $mrs) {
 
-    # Obtener cambios del MR
-    $changes = Invoke-RestMethod -Headers $headers `
-        -Uri "$baseUrl/projects/$projectId/merge_requests/$($mr.iid)/changes"
+                # =========================
+                # OBTENER CAMBIOS DEL MR
+                # =========================
+                $changes = Invoke-RestMethod -Headers $headers `
+                    -Uri "$baseUrl/projects/$projectId/merge_requests/$($mr.iid)/changes"
 
-    $aplicativos = @()
+                $aplicativos = @()
 
-    foreach ($file in $changes.changes) {
-        $path = $file.new_path
+                foreach ($file in $changes.changes) {
 
-        if ($path -match "/") {
-            $folder = $path.Split("/")[0]
+                    $path = $file.new_path
+                    $pathLower = $path.ToLower()
 
-            if (-not $aplicativos.Contains($folder)) {
-                $aplicativos += $folder
+                    # =========================
+                    # FILTRO POR ESTRUCTURA REAL
+                    # middleware/MW-Services/BackEnd/<app>
+                    # =========================
+                    if ($pathLower.StartsWith("middleware/mw-services/backend/")) {
+
+                        $partes = $path.Split("/")
+
+                        if ($partes.Count -ge 4) {
+
+                            $app = "$($partes[0])/$($partes[1])/$($partes[2])/$($partes[3])"
+
+                            if (-not $aplicativos.Contains($app)) {
+                                $aplicativos += $app
+                            }
+                        }
+                    }
+                }
+
+                # Limpiar duplicados
+                $aplicativos = $aplicativos | Sort-Object -Unique
+
+                # =========================
+                # GUARDAR RESULTADO
+                # =========================
+                $resultados += [PSCustomObject]@{
+                    Proyecto        = $proj.name
+                    Grupo           = $proj.namespace.name
+                    Aplicativos     = ($aplicativos -join ", ")
+                    MR_ID           = $mr.iid
+                    Titulo          = $mr.title
+                    Autor           = $mr.author.name
+                    FechaCreacion   = $mr.created_at
+                    FechaMerge      = $mr.merged_at
+                    RamaOrigen      = $mr.source_branch
+                    RamaDestino     = $mr.target_branch
+                    URL             = $mr.web_url
+                }
             }
-        }
-    }
-
-    $resultados += [PSCustomObject]@{
-        Proyecto        = $proj.name
-        Grupo           = $proj.namespace.name
-        Aplicativos     = ($aplicativos -join ", ")
-        MR_ID           = $mr.iid
-        Titulo          = $mr.title
-        Autor           = $mr.author.name
-        FechaMerge      = $mr.merged_at
-        RamaOrigen      = $mr.source_branch
-        URL             = $mr.web_url
-    }
-}
 
             $mrPage++
 
