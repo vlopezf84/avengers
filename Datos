@@ -1,0 +1,65 @@
+# =========================
+# CONFIGURACIÓN
+# =========================
+$token = "TU_TOKEN"
+$baseUrl = "http://10.85.177.232/api/v4"
+$fechaInicio = (Get-Date).AddYears(-3).ToString("yyyy-MM-dd")
+
+$headers = @{
+    "PRIVATE-TOKEN" = $token
+}
+
+$resultados = @()
+
+# =========================
+# OBTENER TODOS LOS PROYECTOS
+# =========================
+$page = 1
+$perPage = 100
+
+do {
+    $projects = Invoke-RestMethod -Headers $headers `
+        -Uri "$baseUrl/projects?membership=true&per_page=$perPage&page=$page"
+
+    foreach ($proj in $projects) {
+
+        Write-Host "Procesando proyecto: $($proj.name)"
+
+        $projectId = $proj.id
+        $mrPage = 1
+
+        do {
+            $mrs = Invoke-RestMethod -Headers $headers `
+                -Uri "$baseUrl/projects/$projectId/merge_requests?state=merged&target_branch=main&per_page=100&page=$mrPage&updated_after=$fechaInicio"
+
+            foreach ($mr in $mrs) {
+                $resultados += [PSCustomObject]@{
+                    Proyecto        = $proj.name
+                    Grupo           = $proj.namespace.name
+                    MR_ID           = $mr.iid
+                    Titulo          = $mr.title
+                    Autor           = $mr.author.name
+                    FechaCreacion   = $mr.created_at
+                    FechaMerge      = $mr.merged_at
+                    RamaOrigen      = $mr.source_branch
+                    RamaDestino     = $mr.target_branch
+                    URL             = $mr.web_url
+                }
+            }
+
+            $mrPage++
+
+        } while ($mrs.Count -gt 0)
+    }
+
+    $page++
+
+} while ($projects.Count -gt 0)
+
+# =========================
+# EXPORTAR A CSV
+# =========================
+$path = "reporte_liberaciones_gitlab.csv"
+$resultados | Export-Csv -Path $path -NoTypeInformation -Encoding UTF8
+
+Write-Host "Reporte generado en: $path"
