@@ -1,0 +1,10 @@
+$carpeta = "D:"
+$salida = "D:"
+
+Get-ChildItem -Path $carpeta -File -Recurse |
+Select-Object Name, FullName, LastWriteTime |
+ForEach-Object {
+    "$($_.Name) | $($_.FullName) | $($_.LastWriteTime)"
+} | Out-File -FilePath $salida -Encoding UTF8
+
+Write-Host "Archivo generado en: $salida"
