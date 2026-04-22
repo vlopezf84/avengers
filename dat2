@@ -1,0 +1,11 @@
+$carpeta = "D:\ServiceCMS"
+$salida = "D:\C-InfoFiles.txt"
+
+Get-ChildItem -Path $carpeta -Recurse |
+Where-Object { !$_.PSIsContainer } |
+Select-Object Name, FullName, LastWriteTime |
+ForEach-Object {
+    "$($_.Name) | $($_.FullName) | $($_.LastWriteTime)"
+} | Out-File -FilePath $salida -Encoding UTF8
+
+Write-Host "Archivo generado en: $salida"
