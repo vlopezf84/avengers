@@ -1,1 +1,186 @@
 
+ D:\ServiceCMS\ScriptInfo.txt 
+ D:\ServiceCMS\Parametros\servicios.config 
+ D:\ServiceCMS\BKP_CHG0004418\T24_fix\T24.exe 
+ D:\ServiceCMS\T24.exe 
+ D:\ServiceCMS\ActualizaEstatus.exe 
+ D:\ServiceCMS\BKP_CHG0004418\ActualizaEstatus\ActualizaEstatus.exe 
+ D:\ServiceCMS\BKP_CHG0004421\New\Replicas.exe 
+ D:\ServiceCMS\Replicas.exe 
+ D:\ServiceCMS\BKP_CHG0004398\Nuevo\T24.exe 
+ D:\ServiceCMS\BKP_CHG0004418\T24.exe 
+ D:\ServiceCMS\BKP_CHG0004168\Nuevo\T24.exe 
+ D:\ServiceCMS\BKP_CHG0004398\T24.exe 
+ D:\ServiceCMS\BKP_CHG0004168\T24.exe 
+ D:\ServiceCMS\BKP_CHG0003995\nuevos\MUFG_T24.dll 
+ D:\ServiceCMS\MUFG_T24.dll 
+ D:\ServiceCMS\Parametros\servicios.config.CHG0004421 
+ D:\ServiceCMS\BKP_CHG0003995\nuevos\ForexOnline.exe 
+ D:\ServiceCMS\ForexOnline.exe 
+ D:\ServiceCMS\ControladorServicios.exe 
+ D:\ServiceCMS\Despachador.exe 
+ D:\ServiceCMS\Swf_IN_ControladorServicios.exe 
+ D:\ServiceCMS\ListadoComponentesPosterior_11222025.log 
+ D:\ServiceCMS\ListadoComponentesPrevio_11222025.log 
+ D:\ServiceCMS\Swf_IN_FT.exe 
+ D:\ServiceCMS\Swf_IN_ETL.exe 
+ D:\ServiceCMS\ListadoComponentesProduccion.log 
+ D:\ServiceCMS\DIGITAL_SIGNATURE\CHG0003530_SPEI_281025\MUFG-SPEI-PROD-23.pfx 
+ D:\ServiceCMS\DIGITAL_SIGNATURE\MUFG-SPEI-PROD-23.pfx 
+ D:\ServiceCMS\Laika.Automator.exe 
+ D:\ServiceCMS\Swf_OUT_ETL.exe 
+ D:\ServiceCMS\BKP_CHG0004033\T24.exe 
+ D:\ServiceCMS\lista.txt 
+ D:\ServiceCMS\BKP_CHG0002261\NEW\Swf_IN_FT.exe 
+ D:\ServiceCMS\BKP_CHG0002261\NEW\Swf_IN_ETL.exe 
+ D:\ServiceCMS\BKP_CHG0002261\NEW\Swf_OUT_ETL.exe 
+ D:\ServiceCMS\BKP_CHG0002261\NEW\Calypso_Liquidacion.exe 
+ D:\ServiceCMS\Calypso_Liquidacion.exe 
+ D:\ServiceCMS\BKP_CHG0002261\NEW\GPH_ETL.exe 
+ D:\ServiceCMS\GPH_ETL.exe 
+ D:\ServiceCMS\BKP_CHG0002261\NEW\Lectura.exe 
+ D:\ServiceCMS\Lectura.exe 
+ D:\ServiceCMS\BKP_CHG0002261\NEW\T24.exe 
+ D:\ServiceCMS\BKP_CHG0003995\ForexOnline.exe 
+ D:\ServiceCMS\BKP_CHG0002261\bkp_25082025\Lectura.exe 
+ D:\ServiceCMS\Lectura_ISOFIXTAG53_T24_20251122.exe.exe 
+ D:\ServiceCMS\BKP_CHG0003995\servicios.config 
+ D:\ServiceCMS\BKP_CHG0002261\bkp_25082025\Swf_IN_FT.exe 
+ D:\ServiceCMS\BKP_CHG0002512\NEW\Swf_IN_FT.exe 
+ D:\ServiceCMS\Swf_IN_FT_ISOFIXTAG53_T24_20251122.exe.exe 
+ D:\ServiceCMS\BKP_CHG0002261\bkp_25082025\Swf_IN_ETL.exe 
+ D:\ServiceCMS\BKP_CHG0002512\NEW\Swf_IN_ETL.exe 
+ D:\ServiceCMS\Swf_IN_ETL_ISOFIXTAG53_T24_20251122.exe.exe 
+ D:\ServiceCMS\BKP_CHG0002512\Swf_IN_ETL.exe 
+ D:\ServiceCMS\BKP_CHG0002512\Swf_IN_FT.exe 
+ D:\ServiceCMS\BKP_CHG0002520\Swf_IN_ETL.exe 
+ D:\ServiceCMS\Laika.Automator_ISOFIXTAG53_T24_20251122.exe.exe 
+ D:\ServiceCMS\BBVA\00000014.apisempresariales.p12 
+ D:\ServiceCMS\BKP_CHG0002261\Complemento\Swf_IN_ETL.exe 
+ D:\ServiceCMS\BKP_CHG0002413\Swf_IN_ETL.exe 
+ D:\ServiceCMS\BBVA\00000014.apisempresariales.p12_v1 
+ D:\ServiceCMS\Parametros\servicios_04042025.config.ORI 
+ D:\ServiceCMS\BBVA\00000014apisempresariales.cer 
+ D:\ServiceCMS\BKP_CHG0004421\Replicas.exe 
+ D:\ServiceCMS\BKP_CHG0002520\Swf_IN_FT.exe 
+ D:\ServiceCMS\BKP_CHG0002261\Swf_IN_ETL.exe 
+ D:\ServiceCMS\BKP_CHG0002263\NEW\Swf_IN_ETL\Swf_IN_ETL.exe 
+ D:\ServiceCMS\BKP_CHG0002263\NEW\Swf_IN_ETL\Swf_IN_ETL.exe.config 
+ D:\ServiceCMS\Swf_IN_ETL.exe.config 
+ D:\ServiceCMS\BKP_CHG0002261\Swf_IN_FT.exe 
+ D:\ServiceCMS\BKP_CHG0002263\NEW\Swf_IN_FT\Swf_IN_FT.exe 
+ D:\ServiceCMS\BKP_CHG0002261\bkp_25082025\T24.exe 
+ D:\ServiceCMS\CHG0002238\NEW\T24.exe 
+ D:\ServiceCMS\T24_ISOFIXTAG53_T24_20251122.exe.exe 
+ D:\ServiceCMS\BKP_CHG0004418\ActualizaEstatus.exe 
+ D:\ServiceCMS\CHG0002238\NEW\ActualizaEstatus.exe 
+ D:\ServiceCMS\BKP_CHG0002772\Lectura.exe 
+ D:\ServiceCMS\CHG0002238\NEW\Lectura.exe 
+ D:\ServiceCMS\BKP_CHG0002197\new\Swf_IN_ETL.exe 
+ D:\ServiceCMS\BKP_CHG0002263\Swf_IN_ETL.exe 
+ D:\ServiceCMS\BKP_CHG0002199\Lectura\Lectura.exe 
+ D:\ServiceCMS\CHG0002238\Lectura.exe 
+ D:\ServiceCMS\BKP_CHG0002199\Lectura.exe 
+ D:\ServiceCMS\BKP_CHG0002124\New\Replicas.exe 
+ D:\ServiceCMS\BKP_CHG0002261\Replicas.exe 
+ D:\ServiceCMS\BKP_CHG0002261\bkp_25082025\Swf_OUT_ETL.exe 
+ D:\ServiceCMS\Swf_OUT_ETL_ISOFIXTAG53_T24_20251122.exe.exe 
+ D:\ServiceCMS\DIGITAL_SIGNATURE_CHG0002094 CHG0002095.zip 
+ D:\ServiceCMS\DIGITAL_SIGNATURE\back_28102025\MUFG-SPEI-PROD-23.pfx 
+ D:\ServiceCMS\DIGITAL_SIGNATURE\nuevo\MUFG-SPEI-PROD-23.pfx 
+ D:\ServiceCMS\BKP_CHG0002413\Laika.Automator.exe 
+ D:\ServiceCMS\BKP_CHG0002263\Swf_IN_FT.exe 
+ D:\ServiceCMS\BKP_CHG0002103\Lectura.exe 
+ D:\ServiceCMS\CHG0002238\T24.exe 
+ D:\ServiceCMS\BKP_CHG0001997\back_11102024\Swf_OUT_ETL.exe 
+ D:\ServiceCMS\BKP_CHG0002261\bkp_25082025\Calypso_Liquidacion.exe 
+ D:\ServiceCMS\Calypso_Liquidacion_ISOFIXTAG53_T24_20251122.exe.exe 
+ D:\ServiceCMS\BKP_CHG0001997\Laika.Automator.exe 
+ D:\ServiceCMS\BKP_CHG0001997\Swf_OUT_ETL.exe 
+ D:\ServiceCMS\CHG0001939\02092024\Laika.Automator.exe 
+ D:\ServiceCMS\BKP_CHG0001914\Swf_OUT_ETL.exe 
+ D:\ServiceCMS\CHG0001939\Swf_OUT_ETL.exe 
+ D:\ServiceCMS\BKP_CHG0001997\T24.exe 
+ D:\ServiceCMS\BKP_CHG0001914\Laika.Automator.exe 
+ D:\ServiceCMS\CHG0001939\Laika.Automator.exe 
+ D:\ServiceCMS\BKP_CHG0001903\Swf_IN_ETL.exe 
+ D:\ServiceCMS\BKP_CHG0002197\Swf_IN_ETL.exe 
+ D:\ServiceCMS\BKP_CHG0001997\Swf_IN_FT.exe 
+ D:\ServiceCMS\BKP_CHG0001811\NEW\Laika.Automator.exe 
+ D:\ServiceCMS\BKP_CHG0001835\Laika.Automator.exe 
+ D:\ServiceCMS\BKP_CHG0001811\NEW\Swf_IN_ETL.exe 
+ D:\ServiceCMS\BKP_CHG0001835\Swf_IN_ETL.exe 
+ D:\ServiceCMS\BKP_CHG0001811\NEW\Swf_IN_FT.exe 
+ D:\ServiceCMS\BKP_CHG0001835\Swf_IN_FT.exe 
+ D:\ServiceCMS\BKP_CHG0001790\NEW\Laika.Automator (Final).zip 
+ D:\ServiceCMS\BKP_CHG0001790\NEW\Laika.Automator (Final)\Laika.Automator.exe.config 
+ D:\ServiceCMS\Laika.Automator.exe.config 
+ D:\ServiceCMS\BKP_CHG0001790\NEW\Laika.Automator (Final)\Laika.Automator.exe 
+ D:\ServiceCMS\BKP_CHG0001811\Laika.Automator.exe 
+ D:\ServiceCMS\BKP_CHG0001790\NEW\Laika.Automator.zip 
+ D:\ServiceCMS\BKP_CHG0001790\NEW\Laika.Automator\Swf_IN_ETL.exe 
+ D:\ServiceCMS\BKP_CHG0001811\Swf_IN_ETL.exe 
+ D:\ServiceCMS\BKP_CHG0001790\NEW\Laika.Automator\TOMI .NET.exe 
+ D:\ServiceCMS\BKP_CHG0001790\NEW\Laika.Automator\TOMI.NET_BUS.dll 
+ D:\ServiceCMS\BKP_CHG0001790\NEW\Laika.Automator\Laika.Automator.exe 
+ D:\ServiceCMS\BKP_CHG0001790\NEW\Laika.Automator\Swf_OUT_ETL.exe 
+ D:\ServiceCMS\BKP_CHG0001852\Swf_OUT_ETL.exe 
+ D:\ServiceCMS\BKP_CHG0001790\NEW\Laika.Automator\Laika.Automator.exe.config 
+ D:\ServiceCMS\BKP_CHG0001725\backup 24062024.zip 
+ D:\ServiceCMS\BKP_CHG0001792\NEW\HotScan.exe 
+ D:\ServiceCMS\HotScan.exe 
+ D:\ServiceCMS\BKP_CHG0001725\new files 25062024\T24.exe 
+ D:\ServiceCMS\BKP_CHG0001852\T24.exe 
+ D:\ServiceCMS\Parametros\servicios - 18122024.config 
+ D:\ServiceCMS\BKP_CHG0001725\new files 24062024\T24.exe 
+ D:\ServiceCMS\Backup_CHG0001693\New\Swf_IN_ETL.exe 
+ D:\ServiceCMS\BKP_CHG0001790\Swf_IN_ETL.exe 
+ D:\ServiceCMS\ForexOnlineJCCR.exe 
+ D:\ServiceCMS\BKP_CHG0001792\NEW\FCM_Conector.exe 
+ D:\ServiceCMS\FCM_Conector.exe 
+ D:\ServiceCMS\Backup_CHG0001581\Swf_IN_ETL_NEW\Swf_IN_ETL.exe 
+ D:\ServiceCMS\Backup_CHG0001693\Swf_IN_ETL.exe 
+ D:\ServiceCMS\ControladorMDW.exe 
+ D:\ServiceCMS\BKP_CHG0001790\NEW\Laika.Automator (Final)\Dapper.dll 
+ D:\ServiceCMS\BKP_CHG0001790\NEW\Laika.Automator\Dapper.dll 
+ D:\ServiceCMS\Dapper.dll 
+ D:\ServiceCMS\BKP_CHG0002263\Swf_IN_ETL.exe.config 
+ D:\ServiceCMS\Backup_CHG0001581\Swf_IN_ETL.exe 
+ D:\ServiceCMS\BKP_CHG0001485\ConectorHSM_Nuevo\Conector.exe 
+ D:\ServiceCMS\Conector.exe 
+ D:\ServiceCMS\Parametros\BXKUP_12JUN2024\servicios.config 
+ D:\ServiceCMS\MUFG_T24.zip 
+ D:\ServiceCMS\BKP_CHG0003995\MUFG_T24.dll 
+ D:\ServiceCMS\BKP_CHG0001792\HotScan.exe 
+ D:\ServiceCMS\BKP_CHG0001997\Lectura.exe 
+ D:\ServiceCMS\BKP_CHG0001725\backup 24062024\T24.exe 
+ D:\ServiceCMS\Respaldos Ejecutables\CHG0001559\T24.exe 
+ D:\ServiceCMS\CHG0002238\ActualizaEstatus.exe 
+ D:\ServiceCMS\BKP_CHG0001234\T24.exe 
+ D:\ServiceCMS\Lectura.exe.config 
+ D:\ServiceCMS\BKP_CHG0001234\HotScan.exe 
+ D:\ServiceCMS\BKP_CHG0001234\Lectura.exe 
+ D:\ServiceCMS\EmailCmsAuth.exe 
+ D:\ServiceCMS\BKP_CHG0001790\Swf_OUT_ETL.exe 
+ D:\ServiceCMS\BKP_CHG0001811\Swf_IN_FT.exe 
+ D:\ServiceCMS\BKP_CHG0001419\Swf_IN_ETL.exe 
+ D:\ServiceCMS\BKP_CHG0000746\back10052023\Swf_OUT_ETL.exe 
+ D:\ServiceCMS\BKP_CHG0000746\back09052023\Swf_IN_ETL.exe 
+ D:\ServiceCMS\BKP_CHG0000746\back08052023\Swf_IN_ETL.exe 
+ D:\ServiceCMS\Backup Swf\paso\EmailCmsAuth.zip 
+ D:\ServiceCMS\Backup Swf\paso\ControladorMDW.zip 
+ D:\ServiceCMS\Backup Swf\paso\ControladorMDW\ControladorMDW.exe 
+ D:\ServiceCMS\Backup Swf\paso\ControladorMDW\ControladorMDW.pdb 
+ D:\ServiceCMS\ControladorMDW.pdb 
+ D:\ServiceCMS\Backup Swf\paso\EmailCmsAuth\EmailCmsAuth.exe 
+ D:\ServiceCMS\BKP_CHG0001021\MUFG_T24.dll 
+ D:\ServiceCMS\T24.exe.config 
+ D:\ServiceCMS\Swf_IN_FT.exe.config 
+ D:\ServiceCMS\BKP_CHG0000746\Swf_IN_ETL.exe 
+ D:\ServiceCMS\BKP_CHG0000746\back09052023\Swf_IN_FT.exe 
+ D:\ServiceCMS\BACK13062023\T24.exe 
+ D:\ServiceCMS\BKP_CHG0000650\T24.exe 
+ D:\ServiceCMS\BKP_CHG0000758\Lectura.exe 
+ D:\ServiceCMS\BKP_CHG0002124\Replicas.exe 
+ D:\ServiceCMS\Backup Swf\paso\EmailCmsAuth\EmailCmsAuth.pdb 
+ D:\ServiceCMS\EmailCmsAuth.pdb 
