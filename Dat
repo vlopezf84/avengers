@@ -1,10 +1,396 @@
-$carpeta = "D:"
-$salida = "D:"
-
-Get-ChildItem -Path $carpeta -File -Recurse |
-Select-Object Name, FullName, LastWriteTime |
-ForEach-Object {
-    "$($_.Name) | $($_.FullName) | $($_.LastWriteTime)"
-} | Out-File -FilePath $salida -Encoding UTF8
-
-Write-Host "Archivo generado en: $salida"
+ D:\ServiceCMS\ScriptInfo.txt 	4/22/2026 12:09
+ D:\ServiceCMS\Parametros\servicios.config 	4/17/2026 22:08
+ D:\ServiceCMS\BKP_CHG0004418\T24_fix\T24.exe 	4/10/2026 20:03
+ D:\ServiceCMS\T24.exe 	4/10/2026 20:03
+ D:\ServiceCMS\ActualizaEstatus.exe 	4/9/2026 17:29
+ D:\ServiceCMS\BKP_CHG0004418\ActualizaEstatus\ActualizaEstatus.exe 	4/9/2026 17:29
+ D:\ServiceCMS\BKP_CHG0004421\New\Replicas.exe 	4/8/2026 10:37
+ D:\ServiceCMS\Replicas.exe 	4/8/2026 10:37
+ D:\ServiceCMS\BKP_CHG0004398\Nuevo\T24.exe 	4/6/2026 8:45
+ D:\ServiceCMS\BKP_CHG0004418\T24.exe 	4/6/2026 8:45
+ D:\ServiceCMS\BKP_CHG0004168\Nuevo\T24.exe 	2/18/2026 9:00
+ D:\ServiceCMS\BKP_CHG0004398\T24.exe 	2/18/2026 9:00
+ D:\ServiceCMS\BKP_CHG0004168\T24.exe 	2/6/2026 16:41
+ D:\ServiceCMS\BKP_CHG0003995\nuevos\MUFG_T24.dll 	2/1/2026 18:45
+ D:\ServiceCMS\MUFG_T24.dll 	2/1/2026 18:45
+ D:\ServiceCMS\Parametros\servicios.config.CHG0004421 	2/1/2026 17:36
+ D:\ServiceCMS\BKP_CHG0003995\nuevos\ForexOnline.exe 	1/27/2026 16:29
+ D:\ServiceCMS\ForexOnline.exe 	1/27/2026 16:29
+ D:\ServiceCMS\ControladorServicios.exe 	1/5/2026 18:35
+ D:\ServiceCMS\Despachador.exe 	1/5/2026 18:35
+ D:\ServiceCMS\Swf_IN_ControladorServicios.exe 	1/5/2026 18:35
+ D:\ServiceCMS\ListadoComponentesPosterior_11222025.log 	11/22/2025 9:45
+ D:\ServiceCMS\ListadoComponentesPrevio_11222025.log 	11/22/2025 7:39
+ D:\ServiceCMS\Swf_IN_FT.exe 	11/10/2025 18:27
+ D:\ServiceCMS\Swf_IN_ETL.exe 	11/10/2025 18:27
+ D:\ServiceCMS\ListadoComponentesProduccion.log 	11/6/2025 16:25
+ D:\ServiceCMS\DIGITAL_SIGNATURE\CHG0003530_SPEI_281025\MUFG-SPEI-PROD-23.pfx 	10/28/2025 14:20
+ D:\ServiceCMS\DIGITAL_SIGNATURE\MUFG-SPEI-PROD-23.pfx 	10/28/2025 14:20
+ D:\ServiceCMS\Laika.Automator.exe 	10/24/2025 16:51
+ D:\ServiceCMS\Swf_OUT_ETL.exe 	10/7/2025 13:29
+ D:\ServiceCMS\BKP_CHG0004033\T24.exe 	10/1/2025 9:07
+ D:\ServiceCMS\lista.txt 	9/8/2025 18:41
+ D:\ServiceCMS\BKP_CHG0002261\NEW\Swf_IN_FT.exe 	8/20/2025 17:22
+ D:\ServiceCMS\BKP_CHG0002261\NEW\Swf_IN_ETL.exe 	8/20/2025 17:12
+ D:\ServiceCMS\BKP_CHG0002261\NEW\Swf_OUT_ETL.exe 	8/20/2025 17:06
+ D:\ServiceCMS\BKP_CHG0002261\NEW\Calypso_Liquidacion.exe 	8/20/2025 16:50
+ D:\ServiceCMS\Calypso_Liquidacion.exe 	8/20/2025 16:50
+ D:\ServiceCMS\BKP_CHG0002261\NEW\GPH_ETL.exe 	8/20/2025 16:33
+ D:\ServiceCMS\GPH_ETL.exe 	8/20/2025 16:33
+ D:\ServiceCMS\BKP_CHG0002261\NEW\Lectura.exe 	8/20/2025 16:27
+ D:\ServiceCMS\Lectura.exe 	8/20/2025 16:27
+ D:\ServiceCMS\BKP_CHG0002261\NEW\T24.exe 	8/20/2025 13:43
+ D:\ServiceCMS\BKP_CHG0003995\ForexOnline.exe 	7/2/2025 13:55
+ D:\ServiceCMS\BKP_CHG0002261\bkp_25082025\Lectura.exe 	4/30/2025 17:42
+ D:\ServiceCMS\Lectura_ISOFIXTAG53_T24_20251122.exe.exe 	4/30/2025 17:42
+ D:\ServiceCMS\BKP_CHG0003995\servicios.config 	4/4/2025 17:41
+ D:\ServiceCMS\BKP_CHG0002261\bkp_25082025\Swf_IN_FT.exe 	2/12/2025 14:13
+ D:\ServiceCMS\BKP_CHG0002512\NEW\Swf_IN_FT.exe 	2/12/2025 14:13
+ D:\ServiceCMS\Swf_IN_FT_ISOFIXTAG53_T24_20251122.exe.exe 	2/12/2025 14:13
+ D:\ServiceCMS\BKP_CHG0002261\bkp_25082025\Swf_IN_ETL.exe 	2/12/2025 14:10
+ D:\ServiceCMS\BKP_CHG0002512\NEW\Swf_IN_ETL.exe 	2/12/2025 14:10
+ D:\ServiceCMS\Swf_IN_ETL_ISOFIXTAG53_T24_20251122.exe.exe 	2/12/2025 14:10
+ D:\ServiceCMS\BKP_CHG0002512\Swf_IN_ETL.exe 	2/10/2025 18:56
+ D:\ServiceCMS\BKP_CHG0002512\Swf_IN_FT.exe 	2/10/2025 18:52
+ D:\ServiceCMS\BKP_CHG0002520\Swf_IN_ETL.exe 	1/16/2025 16:23
+ D:\ServiceCMS\Laika.Automator_ISOFIXTAG53_T24_20251122.exe.exe 	1/16/2025 15:52
+ D:\ServiceCMS\BBVA\00000014.apisempresariales.p12 	12/19/2024 18:44
+ D:\ServiceCMS\BKP_CHG0002261\Complemento\Swf_IN_ETL.exe 	12/19/2024 17:29
+ D:\ServiceCMS\BKP_CHG0002413\Swf_IN_ETL.exe 	12/19/2024 17:29
+ D:\ServiceCMS\BBVA\00000014.apisempresariales.p12_v1 	12/19/2024 13:06
+ D:\ServiceCMS\Parametros\servicios_04042025.config.ORI 	12/18/2024 18:55
+ D:\ServiceCMS\BBVA\00000014apisempresariales.cer 	12/18/2024 13:37
+ D:\ServiceCMS\BKP_CHG0004421\Replicas.exe 	12/18/2024 10:01
+ D:\ServiceCMS\BKP_CHG0002520\Swf_IN_FT.exe 	12/17/2024 16:57
+ D:\ServiceCMS\BKP_CHG0002261\Swf_IN_ETL.exe 	12/4/2024 20:23
+ D:\ServiceCMS\BKP_CHG0002263\NEW\Swf_IN_ETL\Swf_IN_ETL.exe 	12/4/2024 20:23
+ D:\ServiceCMS\BKP_CHG0002263\NEW\Swf_IN_ETL\Swf_IN_ETL.exe.config 	12/4/2024 20:23
+ D:\ServiceCMS\Swf_IN_ETL.exe.config 	12/4/2024 20:23
+ D:\ServiceCMS\BKP_CHG0002261\Swf_IN_FT.exe 	12/3/2024 9:58
+ D:\ServiceCMS\BKP_CHG0002263\NEW\Swf_IN_FT\Swf_IN_FT.exe 	12/3/2024 9:58
+ D:\ServiceCMS\BKP_CHG0002261\bkp_25082025\T24.exe 	11/20/2024 18:11
+ D:\ServiceCMS\CHG0002238\NEW\T24.exe 	11/20/2024 18:11
+ D:\ServiceCMS\T24_ISOFIXTAG53_T24_20251122.exe.exe 	11/20/2024 18:11
+ D:\ServiceCMS\BKP_CHG0004418\ActualizaEstatus.exe 	11/20/2024 17:38
+ D:\ServiceCMS\CHG0002238\NEW\ActualizaEstatus.exe 	11/20/2024 17:38
+ D:\ServiceCMS\BKP_CHG0002772\Lectura.exe 	11/20/2024 17:31
+ D:\ServiceCMS\CHG0002238\NEW\Lectura.exe 	11/20/2024 17:31
+ D:\ServiceCMS\BKP_CHG0002197\new\Swf_IN_ETL.exe 	11/8/2024 9:39
+ D:\ServiceCMS\BKP_CHG0002263\Swf_IN_ETL.exe 	11/8/2024 9:39
+ D:\ServiceCMS\BKP_CHG0002199\Lectura\Lectura.exe 	11/5/2024 16:57
+ D:\ServiceCMS\CHG0002238\Lectura.exe 	11/5/2024 16:57
+ D:\ServiceCMS\BKP_CHG0002199\Lectura.exe 	10/22/2024 16:45
+ D:\ServiceCMS\BKP_CHG0002124\New\Replicas.exe 	10/20/2024 19:11
+ D:\ServiceCMS\BKP_CHG0002261\Replicas.exe 	10/20/2024 19:11
+ D:\ServiceCMS\BKP_CHG0002261\bkp_25082025\Swf_OUT_ETL.exe 	10/10/2024 14:40
+ D:\ServiceCMS\Swf_OUT_ETL_ISOFIXTAG53_T24_20251122.exe.exe 	10/10/2024 14:40
+ D:\ServiceCMS\DIGITAL_SIGNATURE_CHG0002094 CHG0002095.zip 	10/9/2024 19:11
+ D:\ServiceCMS\DIGITAL_SIGNATURE\back_28102025\MUFG-SPEI-PROD-23.pfx 	10/3/2024 17:53
+ D:\ServiceCMS\DIGITAL_SIGNATURE\nuevo\MUFG-SPEI-PROD-23.pfx 	10/3/2024 17:53
+ D:\ServiceCMS\BKP_CHG0002413\Laika.Automator.exe 	9/27/2024 13:33
+ D:\ServiceCMS\BKP_CHG0002263\Swf_IN_FT.exe 	9/27/2024 13:30
+ D:\ServiceCMS\BKP_CHG0002103\Lectura.exe 	9/27/2024 13:29
+ D:\ServiceCMS\CHG0002238\T24.exe 	9/27/2024 13:28
+ D:\ServiceCMS\BKP_CHG0001997\back_11102024\Swf_OUT_ETL.exe 	9/27/2024 13:21
+ D:\ServiceCMS\BKP_CHG0002261\bkp_25082025\Calypso_Liquidacion.exe 	9/3/2024 13:43
+ D:\ServiceCMS\Calypso_Liquidacion_ISOFIXTAG53_T24_20251122.exe.exe 	9/3/2024 13:43
+ D:\ServiceCMS\BKP_CHG0001997\Laika.Automator.exe 	9/2/2024 11:35
+ D:\ServiceCMS\BKP_CHG0001997\Swf_OUT_ETL.exe 	8/29/2024 12:24
+ D:\ServiceCMS\CHG0001939\02092024\Laika.Automator.exe 	8/29/2024 12:05
+ D:\ServiceCMS\BKP_CHG0001914\Swf_OUT_ETL.exe 	7/25/2024 19:16
+ D:\ServiceCMS\CHG0001939\Swf_OUT_ETL.exe 	7/25/2024 19:16
+ D:\ServiceCMS\BKP_CHG0001997\T24.exe 	7/25/2024 19:15
+ D:\ServiceCMS\BKP_CHG0001914\Laika.Automator.exe 	7/25/2024 19:14
+ D:\ServiceCMS\CHG0001939\Laika.Automator.exe 	7/25/2024 19:14
+ D:\ServiceCMS\BKP_CHG0001903\Swf_IN_ETL.exe 	7/25/2024 19:12
+ D:\ServiceCMS\BKP_CHG0002197\Swf_IN_ETL.exe 	7/25/2024 19:12
+ D:\ServiceCMS\BKP_CHG0001997\Swf_IN_FT.exe 	7/25/2024 18:42
+ D:\ServiceCMS\BKP_CHG0001811\NEW\Laika.Automator.exe 	7/21/2024 15:49
+ D:\ServiceCMS\BKP_CHG0001835\Laika.Automator.exe 	7/21/2024 15:49
+ D:\ServiceCMS\BKP_CHG0001811\NEW\Swf_IN_ETL.exe 	7/21/2024 15:47
+ D:\ServiceCMS\BKP_CHG0001835\Swf_IN_ETL.exe 	7/21/2024 15:47
+ D:\ServiceCMS\BKP_CHG0001811\NEW\Swf_IN_FT.exe 	7/21/2024 15:44
+ D:\ServiceCMS\BKP_CHG0001835\Swf_IN_FT.exe 	7/21/2024 15:44
+ D:\ServiceCMS\BKP_CHG0001790\NEW\Laika.Automator (Final).zip 	7/10/2024 9:15
+ D:\ServiceCMS\BKP_CHG0001790\NEW\Laika.Automator (Final)\Laika.Automator.exe.config 	7/10/2024 9:10
+ D:\ServiceCMS\Laika.Automator.exe.config 	7/10/2024 9:10
+ D:\ServiceCMS\BKP_CHG0001790\NEW\Laika.Automator (Final)\Laika.Automator.exe 	7/10/2024 9:09
+ D:\ServiceCMS\BKP_CHG0001811\Laika.Automator.exe 	7/10/2024 9:09
+ D:\ServiceCMS\BKP_CHG0001790\NEW\Laika.Automator.zip 	7/9/2024 10:07
+ D:\ServiceCMS\BKP_CHG0001790\NEW\Laika.Automator\Swf_IN_ETL.exe 	7/4/2024 18:35
+ D:\ServiceCMS\BKP_CHG0001811\Swf_IN_ETL.exe 	7/4/2024 18:35
+ D:\ServiceCMS\BKP_CHG0001790\NEW\Laika.Automator\TOMI .NET.exe 	7/4/2024 15:10
+ D:\ServiceCMS\BKP_CHG0001790\NEW\Laika.Automator\TOMI.NET_BUS.dll 	7/4/2024 15:09
+ D:\ServiceCMS\BKP_CHG0001790\NEW\Laika.Automator\Laika.Automator.exe 	7/4/2024 11:25
+ D:\ServiceCMS\BKP_CHG0001790\NEW\Laika.Automator\Swf_OUT_ETL.exe 	7/4/2024 11:18
+ D:\ServiceCMS\BKP_CHG0001852\Swf_OUT_ETL.exe 	7/4/2024 11:18
+ D:\ServiceCMS\BKP_CHG0001790\NEW\Laika.Automator\Laika.Automator.exe.config 	7/2/2024 12:30
+ D:\ServiceCMS\BKP_CHG0001725\backup 24062024.zip 	6/25/2024 19:21
+ D:\ServiceCMS\BKP_CHG0001792\NEW\HotScan.exe 	6/25/2024 13:53
+ D:\ServiceCMS\HotScan.exe 	6/25/2024 13:53
+ D:\ServiceCMS\BKP_CHG0001725\new files 25062024\T24.exe 	6/25/2024 11:53
+ D:\ServiceCMS\BKP_CHG0001852\T24.exe 	6/25/2024 11:53
+ D:\ServiceCMS\Parametros\servicios - 18122024.config 	6/15/2024 9:13
+ D:\ServiceCMS\BKP_CHG0001725\new files 24062024\T24.exe 	6/10/2024 17:15
+ D:\ServiceCMS\Backup_CHG0001693\New\Swf_IN_ETL.exe 	6/6/2024 16:32
+ D:\ServiceCMS\BKP_CHG0001790\Swf_IN_ETL.exe 	6/6/2024 16:32
+ D:\ServiceCMS\ForexOnlineJCCR.exe 	6/6/2024 8:51
+ D:\ServiceCMS\BKP_CHG0001792\NEW\FCM_Conector.exe 	5/16/2024 13:03
+ D:\ServiceCMS\FCM_Conector.exe 	5/16/2024 13:03
+ D:\ServiceCMS\Backup_CHG0001581\Swf_IN_ETL_NEW\Swf_IN_ETL.exe 	4/25/2024 17:17
+ D:\ServiceCMS\Backup_CHG0001693\Swf_IN_ETL.exe 	4/25/2024 17:17
+ D:\ServiceCMS\ControladorMDW.exe 	4/5/2024 13:25
+ D:\ServiceCMS\BKP_CHG0001790\NEW\Laika.Automator (Final)\Dapper.dll 	3/6/2024 9:02
+ D:\ServiceCMS\BKP_CHG0001790\NEW\Laika.Automator\Dapper.dll 	3/6/2024 9:02
+ D:\ServiceCMS\Dapper.dll 	3/6/2024 9:02
+ D:\ServiceCMS\BKP_CHG0002263\Swf_IN_ETL.exe.config 	3/5/2024 8:41
+ D:\ServiceCMS\Backup_CHG0001581\Swf_IN_ETL.exe 	3/1/2024 22:51
+ D:\ServiceCMS\BKP_CHG0001485\ConectorHSM_Nuevo\Conector.exe 	10/19/2023 18:36
+ D:\ServiceCMS\Conector.exe 	10/19/2023 18:36
+ D:\ServiceCMS\Parametros\BXKUP_12JUN2024\servicios.config 	9/22/2023 9:22
+ D:\ServiceCMS\MUFG_T24.zip 	9/18/2023 11:29
+ D:\ServiceCMS\BKP_CHG0003995\MUFG_T24.dll 	8/31/2023 15:52
+ D:\ServiceCMS\BKP_CHG0001792\HotScan.exe 	7/27/2023 16:36
+ D:\ServiceCMS\BKP_CHG0001997\Lectura.exe 	7/27/2023 12:44
+ D:\ServiceCMS\BKP_CHG0001725\backup 24062024\T24.exe 	7/26/2023 18:06
+ D:\ServiceCMS\Respaldos Ejecutables\CHG0001559\T24.exe 	7/26/2023 18:06
+ D:\ServiceCMS\CHG0002238\ActualizaEstatus.exe 	7/18/2023 13:23
+ D:\ServiceCMS\BKP_CHG0001234\T24.exe 	6/13/2023 17:56
+ D:\ServiceCMS\Lectura.exe.config 	5/25/2023 19:37
+ D:\ServiceCMS\BKP_CHG0001234\HotScan.exe 	5/24/2023 11:21
+ D:\ServiceCMS\BKP_CHG0001234\Lectura.exe 	5/24/2023 11:19
+ D:\ServiceCMS\EmailCmsAuth.exe 	5/11/2023 14:17
+ D:\ServiceCMS\BKP_CHG0001790\Swf_OUT_ETL.exe 	5/10/2023 13:25
+ D:\ServiceCMS\BKP_CHG0001811\Swf_IN_FT.exe 	5/9/2023 17:50
+ D:\ServiceCMS\BKP_CHG0001419\Swf_IN_ETL.exe 	5/9/2023 17:37
+ D:\ServiceCMS\BKP_CHG0000746\back10052023\Swf_OUT_ETL.exe 	5/9/2023 17:07
+ D:\ServiceCMS\BKP_CHG0000746\back09052023\Swf_IN_ETL.exe 	5/8/2023 3:33
+ D:\ServiceCMS\BKP_CHG0000746\back08052023\Swf_IN_ETL.exe 	5/5/2023 21:50
+ D:\ServiceCMS\Backup Swf\paso\EmailCmsAuth.zip 	4/28/2023 17:03
+ D:\ServiceCMS\Backup Swf\paso\ControladorMDW.zip 	4/28/2023 17:02
+ D:\ServiceCMS\Backup Swf\paso\ControladorMDW\ControladorMDW.exe 	4/25/2023 13:50
+ D:\ServiceCMS\Backup Swf\paso\ControladorMDW\ControladorMDW.pdb 	4/25/2023 13:50
+ D:\ServiceCMS\ControladorMDW.pdb 	4/25/2023 13:50
+ D:\ServiceCMS\Backup Swf\paso\EmailCmsAuth\EmailCmsAuth.exe 	4/21/2023 12:11
+ D:\ServiceCMS\BKP_CHG0001021\MUFG_T24.dll 	3/30/2023 19:44
+ D:\ServiceCMS\T24.exe.config 	3/17/2023 20:14
+ D:\ServiceCMS\Swf_IN_FT.exe.config 	3/17/2023 20:13
+ D:\ServiceCMS\BKP_CHG0000746\Swf_IN_ETL.exe 	3/13/2023 19:49
+ D:\ServiceCMS\BKP_CHG0000746\back09052023\Swf_IN_FT.exe 	3/13/2023 13:24
+ D:\ServiceCMS\BACK13062023\T24.exe 	3/13/2023 13:24
+ D:\ServiceCMS\BKP_CHG0000650\T24.exe 	3/13/2023 13:24
+ D:\ServiceCMS\BKP_CHG0000758\Lectura.exe 	3/13/2023 13:24
+ D:\ServiceCMS\BKP_CHG0002124\Replicas.exe 	3/13/2023 13:24
+ D:\ServiceCMS\Backup Swf\paso\EmailCmsAuth\EmailCmsAuth.pdb 	1/17/2023 12:46
+ D:\ServiceCMS\EmailCmsAuth.pdb 	1/17/2023 12:46
+ D:\ServiceCMS\Respaldos Ejecutables\GPH\131222\GPH_ETL.zip 	12/9/2022 13:50
+ D:\ServiceCMS\BKP_CHG0002261\bkp_25082025\GPH_ETL.exe 	12/6/2022 20:34
+ D:\ServiceCMS\GPH_ETL_ISOFIXTAG53_T24_20251122.exe.exe 	12/6/2022 20:34
+ D:\ServiceCMS\Respaldos Ejecutables\GPH\131222\GPH_ETL\GPH_ETL.exe 	12/6/2022 20:34
+ D:\ServiceCMS\GPH_ArchivosSalida.exe 	11/24/2022 13:33
+ D:\ServiceCMS\BKPCHG0000621\T24.exe 	11/24/2022 13:25
+ D:\ServiceCMS\BKPCHG0000621\Lectura.exe 	11/24/2022 13:03
+ D:\ServiceCMS\Respaldos Ejecutables\GPH\131222\GPH_ETL.exe 	11/24/2022 12:52
+ D:\ServiceCMS\BKP_CHG0001234\ActualizaEstatus.exe 	11/9/2022 18:30
+ D:\ServiceCMS\ActualizaEstatus.exe.config 	10/21/2022 20:16
+ D:\ServiceCMS\Parametros\servicios_22092023.config 	10/21/2022 6:13
+ D:\ServiceCMS\BKP_CHG0000378\ActualizaEstatusORI.exe 	10/19/2022 15:56
+ D:\ServiceCMS\Backup Swf\Nuevos\ControladorServicios.zip 	10/18/2022 12:13
+ D:\ServiceCMS\CHG0001939\Swf_OUT_ControladorServicios.exe 	10/7/2022 17:19
+ D:\ServiceCMS\Swf_OUT_ControladorServicios.exe 	10/7/2022 17:19
+ D:\ServiceCMS\BKP_CHG0003893\Swf_IN_ControladorServicios.exe 	10/7/2022 17:00
+ D:\ServiceCMS\Parametros\BKP201022\servicios_ORI.config 	7/1/2022 7:49
+ D:\ServiceCMS\BKPCHG0000621\Swf_IN_ETL.exe 	5/19/2022 18:05
+ D:\ServiceCMS\Email.exe 	11/4/2021 11:47
+ D:\ServiceCMS\Email.pdb 	11/4/2021 11:47
+ D:\ServiceCMS\DIGITAL_SIGNATURE\nuevo\00000800000800005525.pfx 	10/15/2021 9:33
+ D:\ServiceCMS\DIGITAL_SIGNATURE\Mxdf01app015.pfx 	10/15/2021 9:18
+ D:\ServiceCMS\DIGITAL_SIGNATURE\nuevo\Mxdf01app015.pfx 	10/15/2021 9:18
+ D:\ServiceCMS\Usuarios.exe 	9/23/2021 17:18
+ D:\ServiceCMS\Email.zip 	9/17/2021 13:54
+ D:\ServiceCMS\Email_respaldo_04112021.exe 	9/17/2021 13:51
+ D:\ServiceCMS\Saldos.exe 	9/9/2021 12:46
+ D:\ServiceCMS\Saldos.pdb 	9/9/2021 7:40
+ D:\ServiceCMS\Despachador_bak.zip 	8/19/2021 17:36
+ D:\ServiceCMS\BKP_CHG0003893\Despachador.exe 	8/19/2021 17:29
+ D:\ServiceCMS\Backup.zip 	8/18/2021 12:11
+ D:\ServiceCMS\BKP_CHG0000435\Lectura.exe 	7/16/2021 13:15
+ D:\ServiceCMS\Lectura_20210715.zip 	7/15/2021 13:03
+ D:\ServiceCMS\BKP_CHG0000435\GPH_ETL.exe 	5/31/2021 17:59
+ D:\ServiceCMS\Swf_IN_MQ_back.zip 	4/20/2021 10:35
+ D:\ServiceCMS\Swf_IN_MQ.exe 	4/20/2021 10:26
+ D:\ServiceCMS\Solicitudes.exe 	4/9/2021 17:21
+ D:\ServiceCMS\CHG0001939\03092024\Calypso_Liquidacion.exe 	3/9/2021 11:37
+ D:\ServiceCMS\BKP_CHG0000435\T24.exe 	3/4/2021 20:20
+ D:\ServiceCMS\BKPCHG0000621\Swf_IN_FT.exe 	2/19/2021 17:16
+ D:\ServiceCMS\Swf_IN_FT.pdb 	2/19/2021 17:16
+ D:\ServiceCMS\Swf_IN_FTrespaldo.zip 	2/18/2021 18:48
+ D:\ServiceCMS\Lectura.pdb 	1/30/2021 13:17
+ D:\ServiceCMS\T24respaldo.exe 	12/10/2020 18:33
+ D:\ServiceCMS\BKP_CHG0000650\MUFG_T24.dll 	12/10/2020 18:29
+ D:\ServiceCMS\BKP_CHG0000746\back09052023\Swf_OUT_ETL.exe 	11/20/2020 19:20
+ D:\ServiceCMS\T24.pdb 	10/23/2020 9:02
+ D:\ServiceCMS\Swf_IN_FTrespaldo.exe 	10/20/2020 17:49
+ D:\ServiceCMS\Entradas.exe 	10/19/2020 5:42
+ D:\ServiceCMS\Entradas.pdb 	10/19/2020 5:42
+ D:\ServiceCMS\BKP_CHG0001792\FCM_Conector.exe 	10/16/2020 15:43
+ D:\ServiceCMS\BKP_CHG0000758\HotScan.exe 	10/16/2020 15:39
+ D:\ServiceCMS\BKP_CHG0000336\ActualizaEstatusORI.exe 	10/16/2020 15:37
+ D:\ServiceCMS\DIGITAL_SIGNATURE\MXDF01APP015.p12 	10/8/2020 10:26
+ D:\ServiceCMS\BKP_CHG0003893\ControladorServicios.exe 	8/11/2020 13:41
+ D:\ServiceCMS\ControladorServicios.pdb 	8/11/2020 13:41
+ D:\ServiceCMS\T24_respaldo.exe 	8/3/2020 18:05
+ D:\ServiceCMS\ForexOnline_Original_15jun24.exe 	7/20/2020 18:39
+ D:\ServiceCMS\Calypso_Forex.exe 	7/20/2020 18:38
+ D:\ServiceCMS\BKPCHG0000621\Replicas.exe 	4/30/2020 15:55
+ D:\ServiceCMS\Despachador.exe.config 	4/13/2020 18:07
+ D:\ServiceCMS\T24_old.exe 	4/8/2020 18:09
+ D:\ServiceCMS\Despachador.pdb 	3/27/2020 6:32
+ D:\ServiceCMS\GPH_Descarga.exe 	3/26/2020 18:09
+ D:\ServiceCMS\BKP_CHG0000435\GPH_ArchivosSalida.exe 	3/26/2020 18:09
+ D:\ServiceCMS\GPH\KEYS\SSH\Mexico Private Key to GPH2.ppk 	3/26/2020 17:01
+ D:\ServiceCMS\Calypso_Liquidacion.pdb 	3/24/2020 10:50
+ D:\ServiceCMS\Calypso_Liquidacion_respaldo.exe 	3/24/2020 10:50
+ D:\ServiceCMS\Calypso_inMT300.exe 	3/23/2020 18:08
+ D:\ServiceCMS\T24_old.pdb 	2/17/2020 18:12
+ D:\ServiceCMS\HotScan.pdb 	2/17/2020 18:10
+ D:\ServiceCMS\FCM_Conector.pdb 	2/17/2020 18:10
+ D:\ServiceCMS\GPH\KEYS\PGP MUFG Mexico - Production (private).asc 	2/6/2020 14:39
+ D:\ServiceCMS\Usuarios_bck.exe 	1/29/2020 17:35
+ D:\ServiceCMS\Email_04112021.pdb 	1/10/2020 9:42
+ D:\ServiceCMS\Solicitudes.pdb 	1/9/2020 16:42
+ D:\ServiceCMS\BBVA\00000014.apisempresariales.p12.bkp_19dic2024 	1/8/2020 12:27
+ D:\ServiceCMS\Impresion.exe 	11/20/2019 13:25
+ D:\ServiceCMS\BKP_CHG0001725\backup 24062024\Newtonsoft.Json.dll 	11/9/2019 0:56
+ D:\ServiceCMS\BKP_CHG0001725\new files 24062024\Newtonsoft.Json.dll 	11/9/2019 0:56
+ D:\ServiceCMS\Newtonsoft.Json.dll 	11/9/2019 0:56
+ D:\ServiceCMS\MUFG_T24.dll.config 	10/31/2019 17:13
+ D:\ServiceCMS\Usuarios.pdb 	10/3/2019 18:03
+ D:\ServiceCMS\Replicas.pdb 	8/20/2019 11:19
+ D:\ServiceCMS\WinSCPnet.dll 	7/21/2019 14:28
+ D:\ServiceCMS\RSA_email.exe 	6/4/2019 11:50
+ D:\ServiceCMS\RSA_email.pdb 	6/4/2019 11:50
+ D:\ServiceCMS\ActualizaEstatus.pdb 	4/23/2019 8:03
+ D:\ServiceCMS\EdoCta\V_3.3\edoCuenta.vshost.exe 	4/3/2019 11:46
+ D:\ServiceCMS\EdoCta\V_3.3\edoCuenta.exe 	4/3/2019 11:45
+ D:\ServiceCMS\EdoCta\V_3.3\edoCuenta.pdb 	4/3/2019 11:45
+ D:\ServiceCMS\MUFG_T24.pdb 	3/12/2019 9:44
+ D:\ServiceCMS\Calypso_Forex.pdb 	3/8/2019 11:54
+ D:\ServiceCMS\BKP_CHG0003995\ojdbc7-12.1.0.1.0.jar 	2/13/2019 16:39
+ D:\ServiceCMS\BKP_CHG0001485\Conector_backup.exe 	2/13/2019 8:40
+ D:\ServiceCMS\Conector.pdb 	2/13/2019 8:40
+ D:\ServiceCMS\EdoCta\V_3.3\Resp. Liber 21032019\edoCuenta.exe 	2/5/2019 12:23
+ D:\ServiceCMS\EdoCta\V_3.3\Resp. Liber 21032019\edoCuenta.pdb 	2/5/2019 12:23
+ D:\ServiceCMS\Swf_IN_ETL.pdb 	1/11/2019 13:41
+ D:\ServiceCMS\ForexOnline.pdb 	1/9/2019 11:12
+ D:\ServiceCMS\EdoCta\V_3.3\MUFG_T24.dll 	1/9/2019 10:43
+ D:\ServiceCMS\EdoCta\V_3.3\MUFG_T24.pdb 	1/9/2019 10:43
+ D:\ServiceCMS\HotScan_OldVersion.pdb 	12/14/2018 10:15
+ D:\ServiceCMS\Swf_OUT_ETL.pdb 	11/22/2018 17:09
+ D:\ServiceCMS\RSA_eco.exe 	11/20/2018 7:10
+ D:\ServiceCMS\RSA_eco.pdb 	11/20/2018 7:10
+ D:\ServiceCMS\Zeus_Extractor.exe 	11/16/2018 11:35
+ D:\ServiceCMS\Zeus_Extractor.pdb 	11/16/2018 11:35
+ D:\ServiceCMS\Zeus_SFTP.exe 	11/16/2018 11:30
+ D:\ServiceCMS\Zeus_SFTP.pdb 	11/16/2018 11:30
+ D:\ServiceCMS\Zeus_Files.exe 	11/16/2018 11:26
+ D:\ServiceCMS\Zeus_Files.pdb 	11/16/2018 11:26
+ D:\ServiceCMS\Zeus_Carga.exe 	11/16/2018 11:23
+ D:\ServiceCMS\Zeus_Carga.pdb 	11/16/2018 11:23
+ D:\ServiceCMS\Zeus_ControladorServicios.exe 	11/16/2018 11:19
+ D:\ServiceCMS\Zeus_ControladorServicios.pdb 	11/16/2018 11:19
+ D:\ServiceCMS\Impresion.pdb 	11/16/2018 10:04
+ D:\ServiceCMS\Impresion_20112019.exe 	11/16/2018 10:04
+ D:\ServiceCMS\Comisiones.exe 	11/16/2018 9:40
+ D:\ServiceCMS\Comisiones.pdb 	11/16/2018 9:40
+ D:\ServiceCMS\Reportes_Carga.exe 	10/23/2018 17:28
+ D:\ServiceCMS\Reportes_Carga.pdb 	10/23/2018 17:28
+ D:\ServiceCMS\Backup Swf\Swf_IN_ControladorServicios_Bkp_211022.exe 	10/17/2018 12:16
+ D:\ServiceCMS\Swf_IN_ControladorServicios.pdb 	10/17/2018 12:16
+ D:\ServiceCMS\BKP_CHG0001914\Swf_OUT_MQ.exe 	9/25/2018 8:49
+ D:\ServiceCMS\CHG0001939\Swf_OUT_MQ.exe 	9/25/2018 8:49
+ D:\ServiceCMS\Swf_OUT_MQ.exe 	9/25/2018 8:49
+ D:\ServiceCMS\Swf_OUT_MQ.pdb 	9/25/2018 8:49
+ D:\ServiceCMS\BKP_CHG0001914\Swf_OUT_PK_DB.exe 	9/25/2018 8:45
+ D:\ServiceCMS\CHG0001939\Swf_OUT_PK_DB.exe 	9/25/2018 8:45
+ D:\ServiceCMS\Swf_OUT_PK_DB.exe 	9/25/2018 8:45
+ D:\ServiceCMS\Swf_OUT_PK_DB.pdb 	9/25/2018 8:45
+ D:\ServiceCMS\BKP_CHG0001914\Swf_OUT_Read.exe 	9/25/2018 8:40
+ D:\ServiceCMS\CHG0001939\Swf_OUT_Read.exe 	9/25/2018 8:40
+ D:\ServiceCMS\Swf_OUT_Read.exe 	9/25/2018 8:40
+ D:\ServiceCMS\Swf_OUT_Read.pdb 	9/25/2018 8:40
+ D:\ServiceCMS\Backup Swf\Swf_OUT_ControladorServicios_Bkp_211022.exe 	9/25/2018 8:35
+ D:\ServiceCMS\Swf_OUT_ControladorServicios.pdb 	9/25/2018 8:35
+ D:\ServiceCMS\Swf_IN_MQ.pdb 	9/25/2018 8:00
+ D:\ServiceCMS\Reportes_ControladorServicios.exe 	8/27/2018 15:14
+ D:\ServiceCMS\Reportes_ControladorServicios.pdb 	8/27/2018 15:14
+ D:\ServiceCMS\Reportes_Files.exe 	7/26/2018 15:46
+ D:\ServiceCMS\Reportes_Files.pdb 	7/26/2018 15:46
+ D:\ServiceCMS\Reportes_Extractor.exe 	7/26/2018 15:07
+ D:\ServiceCMS\Reportes_Extractor.pdb 	7/26/2018 15:07
+ D:\ServiceCMS\Calypso_Conector.exe 	6/26/2018 10:20
+ D:\ServiceCMS\Calypso_Conector.pdb 	6/26/2018 10:20
+ D:\ServiceCMS\Apache.NMS.dll 	5/9/2018 10:57
+ D:\ServiceCMS\Apache.NMS.pdb 	5/9/2018 10:57
+ D:\ServiceCMS\Apache.NMS.ActiveMQ.dll 	5/9/2018 10:57
+ D:\ServiceCMS\Apache.NMS.ActiveMQ.pdb 	5/9/2018 10:57
+ D:\ServiceCMS\EdoCta\V_3.3\mufg_mb_rgb_pos_redu_2.jpg 	5/3/2018 11:03
+ D:\ServiceCMS\GPH\GPH.log 	3/20/2018 16:06
+ D:\ServiceCMS\GPH\GPH_TRANSMITE.txt 	2/1/2018 17:07
+ D:\ServiceCMS\GPH_Descarga.pdb 	1/22/2018 9:18
+ D:\ServiceCMS\GPH\GPH_DESCARGA.txt 	1/22/2018 8:54
+ D:\ServiceCMS\BTMUM_T24.dll 	1/16/2018 11:52
+ D:\ServiceCMS\GPH_ETL.pdb 	1/11/2018 10:50
+ D:\ServiceCMS\GPH\KEYS - Backup\3220_test@mx.mufg.jp_priv.asc 	1/8/2018 16:51
+ D:\ServiceCMS\GPH\KEYS - Backup\3220_test@mx.mufg.jp_pub.asc 	1/8/2018 16:51
+ D:\ServiceCMS\GPH\KEYS - Backup\private_key.asc 	12/28/2017 16:22
+ D:\ServiceCMS\GPH\KEYS - Backup\public_key.asc 	12/28/2017 16:22
+ D:\ServiceCMS\GPH\KEYS - Backup\key.store 	12/28/2017 16:02
+ D:\ServiceCMS\GPH\KEYS - Backup\key.store.bak 	12/28/2017 16:02
+ D:\ServiceCMS\GPH\GPH_TRANSMITE.cmd 	12/27/2017 18:43
+ D:\ServiceCMS\GPH\GPH_DESCARGA.cmd 	12/27/2017 18:42
+ D:\ServiceCMS\BouncyCastle.CryptoExt.dll 	12/5/2017 16:47
+ D:\ServiceCMS\DidiSoft.Pgp.dll 	12/5/2017 16:47
+ D:\ServiceCMS\EdoCta\V_3.3\_20171122.txt 	11/22/2017 17:10
+ D:\ServiceCMS\EdoCta\V_3.2\edoCuenta.exe 	5/3/2017 16:01
+ D:\ServiceCMS\EdoCta\V_3.2\edoCuenta.pdb 	5/3/2017 16:01
+ D:\ServiceCMS\EdoCta\V_3.2\edoCuenta.vshost.exe 	5/3/2017 16:00
+ D:\ServiceCMS\EdoCta\V_3.2\BTMUM_T24.dll 	4/10/2017 8:20
+ D:\ServiceCMS\EdoCta\V_3.2\BTMUM_T24.pdb 	4/10/2017 8:20
+ D:\ServiceCMS\EdoCta\V_3.3\BTMUM_T24.dll 	4/10/2017 8:20
+ D:\ServiceCMS\RespaldosLogs.exe 	2/28/2017 11:25
+ D:\ServiceCMS\RespaldosLogs.pdb 	2/28/2017 11:25
+ D:\ServiceCMS\HotScan.exe.config 	12/16/2015 11:32
+ D:\ServiceCMS\Email.exe.config 	12/16/2015 11:32
+ D:\ServiceCMS\ControladorServicios.exe.config 	12/16/2015 11:32
+ D:\ServiceCMS\BKP_CHG0000758\Lectura.exe.config 	12/1/2015 15:29
+ D:\ServiceCMS\EdoCta\V_3.2\edoCuenta.exe.config 	5/14/2015 11:30
+ D:\ServiceCMS\EdoCta\V_3.2\edoCuenta.vshost.exe.config 	5/14/2015 11:30
+ D:\ServiceCMS\EdoCta\V_3.3\edoCuenta.exe.config 	5/14/2015 11:30
+ D:\ServiceCMS\EdoCta\V_3.3\edoCuenta.vshost.exe.config 	5/14/2015 11:30
+ D:\ServiceCMS\GPH\KEYS\exp_pub.asc 	4/11/2015 7:38
+ D:\ServiceCMS\BKP_CHG0003995\nuevos\Oracle.ManagedDataAccess.dll 	1/15/2015 13:17
+ D:\ServiceCMS\Oracle.ManagedDataAccess.dll 	1/15/2015 13:17
+ D:\ServiceCMS\EdoCta\V_3.2\BankName.jpg 	8/18/2014 12:15
+ D:\ServiceCMS\EdoCta\V_3.2\itextsharp.dll 	8/18/2014 12:15
+ D:\ServiceCMS\EdoCta\V_3.2\mufg_mb_rgb_pos.jpg 	8/18/2014 12:15
+ D:\ServiceCMS\EdoCta\V_3.2\mufg_mb_rgb_pos_color_last.png 	8/18/2014 12:15
+ D:\ServiceCMS\EdoCta\V_3.2\mufg_mb_rgb_pos_redu.jpg 	8/18/2014 12:15
+ D:\ServiceCMS\EdoCta\V_3.3\BankName.jpg 	8/18/2014 12:15
+ D:\ServiceCMS\EdoCta\V_3.3\mufg_mb_rgb_pos.jpg 	8/18/2014 12:15
+ D:\ServiceCMS\EdoCta\V_3.3\mufg_mb_rgb_pos_color_last.png 	8/18/2014 12:15
+ D:\ServiceCMS\EdoCta\V_3.3\mufg_mb_rgb_pos_redu.jpg 	8/18/2014 12:15
+ D:\ServiceCMS\EdoCta\V_3.3\itextsharp.dll 	8/18/2014 12:14
+ D:\ServiceCMS\EdoCta\V_3.3\itextsharp.xml 	8/18/2014 12:14
+ D:\ServiceCMS\EdoCta\V_3.2\edoCuenta.vshost.exe.manifest 	3/18/2013 17:00
+ D:\ServiceCMS\BKP_CHG0002263\NEW\Swf_IN_FT\System.Net.Http.dll 	7/10/2012 21:52
+ D:\ServiceCMS\System.Net.Http.dll 	7/10/2012 21:52
+ D:\ServiceCMS\BKP_CHG0002263\NEW\Swf_IN_FT\System.Net.Http.xml 	6/23/2012 1:00
+ D:\ServiceCMS\System.Net.Http.xml 	6/23/2012 1:00
+ D:\ServiceCMS\EdoCta\V_3.3\edoCuenta.vshost.exe.manifest 	3/17/2010 21:39
+ D:\ServiceCMS\EdoCta\V_3.2\Oracle.DataAccess.dll 	2/28/2010 2:19
+ D:\ServiceCMS\EdoCta\V_3.3\Oracle.DataAccess.dll 	2/28/2010 2:19
+ D:\ServiceCMS\Oracle.DataAccess.dll 	2/28/2010 2:19
+ D:\ServiceCMS\MySql.Data.dll 	11/14/2008 11:39
+ D:\ServiceCMS\SAT\Cadena\openssl.exe 	9/6/2002 16:06
+ D:\ServiceCMS\instsrv.exe 	5/14/1997 22:49
